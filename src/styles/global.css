@@ -1,0 +1,494 @@
+/* =========================
+   Design tokens (1 sola vez)
+   ========================= */
+:root {
+  --violet: #7c3aed;
+  --violet-soft: #ede9fe;
+
+  --orange: #f97316;
+  --orange-soft: #ffedd5;
+
+  --green: #22c55e;
+  --green-soft: #dcfce7;
+
+  --bg: #fafafa;
+  --surface: #ffffff;
+
+  --text: #0f172a;
+  --muted: #64748b;
+
+  --border: #e5e7eb;
+
+  --radius: 20px;
+  --radius-sm: 14px;
+
+  --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  --shadow-soft: 0 6px 16px rgba(15, 23, 42, 0.06);
+
+  --container: 1120px;
+}
+
+/* =========================
+   Base reset
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  line-height: 1.5;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  margin: 0 0 12px;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================
+   Layout helpers
+   ========================= */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin-top: 18px;
+}
+
+.stack-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stack-lg {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   UI primitives
+   ========================= */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  background: #f8fafc;
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--violet-soft);
+  border-color: var(--violet);
+}
+
+.btn--primary {
+  background: var(--violet);
+  color: white;
+  border-color: var(--violet);
+}
+
+.btn--primary:hover {
+  background: #6d28d9;
+}
+
+.btn.secondary {
+  background: var(--orange);
+  color: white;
+  border-color: var(--orange);
+}
+
+.btn.secondary:hover {
+  background: #ea580c;
+}
+
+.btn.ghost {
+  background: transparent;
+  border-color: var(--violet);
+  color: var(--violet);
+}
+
+.btn.ghost:hover {
+  background: var(--violet-soft);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--green);
+  color: white;
+  font-weight: 700;
+}
+
+.chip.soft {
+  background: var(--green-soft);
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(250, 250, 250, 0.86);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 12px 20px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.navbar__brand {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
+}
+
+.navlink {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.navlink:hover {
+  background: #f8fafc;
+  border-color: var(--border);
+}
+
+.navlink--active {
+  background: var(--violet-soft);
+  border-color: var(--violet);
+  color: var(--violet);
+}
+
+/* =========================
+   Home
+   ========================= */
+.hero {
+  padding: 26px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 1020px) {
+  .home-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--violet-soft), var(--shadow);
+  border-color: var(--violet);
+}
+/* =========================
+   Contact page styles
+   ========================= */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.contact-row a {
+  justify-self: end;
+}
+
+.link {
+  color: var(--violet);
+  font-weight: 800;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.field__label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.input {
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  outline: none;
+  font-family: inherit;
+  background: var(--surface);
+  color: var(--text);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.input:focus {
+  border-color: var(--violet);
+  box-shadow: 0 0 0 4px var(--violet-soft);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.note {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* icon buttons */
+.icon-btn {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.icon-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+
+.icon-btn.linkedin:hover {
+  border-color: var(--violet);
+  color: var(--violet);
+}
+
+.icon-btn.github:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+@media (max-width: 900px) {
+  .contact-row {
+    grid-template-columns: 1fr auto;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.tabs.filters {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tabs.filters .filter {
+  background: none;
+  border: none;
+  padding: 12px 0;
+  font-size: 15px;
+  cursor: pointer;
+  color: #666;
+  position: relative;
+}
+
+.tabs.filters .filter::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: #6c4cff;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.tabs.filters .filter.active {
+  color: #111;
+  font-weight: 600;
+}
+
+.tabs.filters .filter.active::after {
+  transform: scaleX(1);
+}
