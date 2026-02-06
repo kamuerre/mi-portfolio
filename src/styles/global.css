@@ -492,3 +492,11 @@ a {
 .tabs.filters .filter.active::after {
   transform: scaleX(1);
 }
+.footer {
+  margin-top: 48px;
+  padding: 24px 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
