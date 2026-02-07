@@ -133,8 +133,8 @@
         "institucion": "Egg (Argentina Programa 4.0)",
         "curso": "Backend 1: Java (Programador Full Stack Junior)",
         "fecha": "2023-05-12",
-        "tipo": "jpg",
-        "archivo": "/certificados/egg-backend1-java.jpg",
+        "tipo": "jpeg",
+        "archivo": "/certificados/egg-backend1-java.jpeg",
         "tags": ["backend", "java", "POO", "Polimorfismos", "Interfaces", "Herencia"]
     },
     {
