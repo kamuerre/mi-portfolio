@@ -104,7 +104,7 @@ export default function Cv() {
         "UX/UI – Codo a Codo",
         
     ];
-    <button className="btn" onClick={() => setTab("certificados")}>Ver certificados</button>
+   
 
     const tabs = [
         { key: "resumen", label: "Resumen" },
@@ -239,26 +239,7 @@ export default function Cv() {
                             <Link className="btn ghost" to="/certificados">Ir a certificados</Link>
                         </div>
 
-                        <h3 style={{ marginTop: 10 }}>Links</h3>
-                        <div className="stack-sm">
-                            <div className="link-row">
-                                <div style={{ fontWeight: 800 }}>LinkedIn</div>
-                                <div className="muted">{PROFILE.linkedin}</div>
-                                <div className="btn-row">
-                                    <button className="btn ghost" onClick={() => openExternal(PROFILE.linkedin)}>Abrir</button>
-                                </div>
-                            </div>
-
-                            <div className="link-row">
-                                <div style={{ fontWeight: 800 }}>GitHub</div>
-                                <div className="muted">{PROFILE.github}</div>
-                                <div className="btn-row">
-                                    <button className="btn ghost" onClick={() => openExternal(PROFILE.github)}>Abrir</button>
-
-
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </section>
             )}
@@ -384,9 +365,11 @@ export default function Cv() {
 
                     <div className="card stack">
                         <h2>Cursos (resumen)</h2>
+                         
                         <ul className="bullets">
                             {CURSOS.map((c) => <li key={c}>{c}</li>)}
                         </ul>
+                        <button className="btn" onClick={() => setTab("certificados")}>Ver certificados</button>
 
                     </div>
                 </section>
