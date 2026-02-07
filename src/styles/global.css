@@ -377,7 +377,7 @@ iframe {
 
 .navbar__links{
   display:flex;
-  justify-content:flex-end; /* alinea a la derecha del container */
+  justify-content:flex-end; /* clave */
   gap:14px;
   align-items:center;
 }
@@ -613,7 +613,7 @@ iframe {
     border: 1px solid var(--border);
     outline: none;
     font-family: inherit;
-    background: var(--violet-soft);
+    background: var(--orange-soft);
     color: var(--text);
     transition: box-shadow .15s ease, border-color .15s ease;
 }
@@ -888,4 +888,10 @@ iframe {
     /* evita espacios raros inline */
     max-width: 100%;
     height: auto;
+}
+.filters{
+  display: flex;
+  gap: 16px;          /* ← aumentá esto a gusto */
+  align-items: center;
+  flex-wrap: wrap;    /* clave para mobile */
 }
