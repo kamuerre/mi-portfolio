@@ -183,17 +183,9 @@ export default function Cv() {
                         {PROFILE.email}
                     </a>
 
-                    <span className="dot">  •  </span>
+                    
 
-                    <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" className="cv-link">
-                        LinkedIn
-                    </a>
-
-                    <span className="dot"> • </span>
-
-                    <a href={PROFILE.github} target="_blank" rel="noreferrer" className="cv-link">
-                        GitHub
-                    </a>
+                   
                 </div>
 
 
