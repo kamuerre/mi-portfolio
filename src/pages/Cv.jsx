@@ -236,7 +236,7 @@ export default function Cv() {
                         <div className="btn-row">
                             <button className="btn" onClick={() => setTab("proyectos")}>Ver proyectos</button>
                             <button className="btn secondary" onClick={() => setTab("skills")}>Ver skills</button>
-                            <Link className="btn ghost" to="/certificados">Ir a certificados</Link>
+                            <Link className="btn ghost" to="/certificados">CERTIFICADOS</Link>
                         </div>
 
                         
