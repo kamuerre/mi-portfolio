@@ -615,3 +615,17 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+.btnImagen {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btnImagen img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}

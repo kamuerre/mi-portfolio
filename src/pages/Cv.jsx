@@ -8,6 +8,7 @@ export default function Cv() {
         rol: "Desarrolladora Full Stack · Frontend / UX UI",
         ubicacion: "Parque Chacabuco, Ciudad Autónoma de Buenos Aires, ARGENTINA",
         email: "crasnosky@gmail.com",
+        emailTo: "mailto:tuemail@gmail.com",
         linkedin: "https://www.linkedin.com/in/camila-rasnosky/",
         github: "https://github.com/kamuerre",
         pdfUrl: "/cv/cv-camila.pdf",
@@ -102,16 +103,16 @@ export default function Cv() {
         "Desarrollo Web – Coderhouse",
         "Programación Full Stack – Egg",
         "UX/UI – Codo a Codo",
-        
+
     ];
-   
+
 
     const tabs = [
         { key: "resumen", label: "Resumen" },
         { key: "experiencia", label: "Experiencia" },
         { key: "educacion", label: "Educación" },
         { key: "skills", label: "Skills" },
-        
+
     ];
 
     const [tab, setTab] = useState("resumen");
@@ -130,7 +131,7 @@ export default function Cv() {
         window.open(url, "_blank", "noopener,noreferrer");
     }
 
-    
+
 
     const skillGroups = useMemo(
         () => Array.from(new Set(SKILLS.map((s) => s.group))).sort((a, b) => a.localeCompare(b)),
@@ -158,15 +159,20 @@ export default function Cv() {
 
                     <div className="btn-row">
                         <a href={PROFILE.pdfUrl} target="_blank" rel="noreferrer" className="btn">
-                            Ver CV (PDF)
+                            CV (PDF)
                         </a>
-                         <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" className="btn secondary">
-                            LinkedIn
+
+                        <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" style={{ color: "#ff7a00" }}>
+                            <img src="/icono-linkedin.svg" alt="icono linkedin" style={{ width: 50, height: 50, filter: "invert(52%) sepia(89%) saturate(2200%) hue-rotate(5deg)" }} />
                         </a>
-                         <a href={PROFILE.github} target="_blank" rel="noreferrer" className="btn">
-                           Github
+
+                        <a href={PROFILE.github} target="_blank" rel="noreferrer" style={{ color: "#ff7a00" }}>
+                            <img src="/icono-github.svg" alt="icono github" style={{ width: 50, height: 50, filter: "invert(52%) sepia(89%) saturate(2200%) hue-rotate(5deg)" }} />
                         </a>
-                      
+
+                        <a href={PROFILE.emailTo} target="_blank" rel="noreferrer" style={{ color: "#ff7a00" }}>
+                            <img src="/icono-email.svg" alt="icono email" style={{ width: 50, height: 50, filter: "invert(52%) sepia(89%) saturate(2200%) hue-rotate(5deg)" }} />
+                        </a>
                     </div>
                 </div>
 
@@ -178,16 +184,11 @@ export default function Cv() {
                 <div className="cv-meta">
                     <span className="muted">{PROFILE.ubicacion}</span>
                     <span className="dot"> • </span>
+                </div>
 
                     <a href={`mailto:${PROFILE.email}`} className="cv-link">
                         {PROFILE.email}
                     </a>
-
-                    
-
-                   
-                </div>
-
 
                 <div className="tabs filters">
                     {tabs.map((t) => (
@@ -228,7 +229,7 @@ export default function Cv() {
                             <Link className="btn ghost" to="/certificados">CERTIFICADOS</Link>
                         </div>
 
-                        
+
                     </div>
                 </section>
             )}
@@ -354,12 +355,12 @@ export default function Cv() {
 
                     <div className="card stack">
                         <h2>Cursos (resumen)</h2>
-                         
+
                         <ul className="bullets">
                             {CURSOS.map((c) => <li key={c}>{c}</li>)}
                         </ul>
                         <Link className="btn" to="/certificados">CERTIFICADOS</Link>
-                         
+
 
                     </div>
                 </section>
