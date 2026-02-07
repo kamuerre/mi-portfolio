@@ -160,7 +160,7 @@ export default function Cv() {
                         <a href={PROFILE.pdfUrl} target="_blank" rel="noreferrer" className="btn">
                             Ver CV (PDF)
                         </a>
-                         <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" className="btn.secondary">
+                         <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" className="btn secondary">
                             LinkedIn
                         </a>
                          <a href={PROFILE.github} target="_blank" rel="noreferrer" className="btn">
