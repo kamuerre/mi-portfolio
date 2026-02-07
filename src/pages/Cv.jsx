@@ -102,13 +102,15 @@ export default function Cv() {
         "Desarrollo Web – Coderhouse",
         "Programación Full Stack – Egg",
         "UX/UI – Codo a Codo",
+        <button className="btn" onClick={() => setTab("certificados")}>Ver certificados</button>
     ];
 
     const tabs = [
         { key: "resumen", label: "Resumen" },
         { key: "experiencia", label: "Experiencia" },
-        { key: "skills", label: "Skills" },
         { key: "educacion", label: "Educación" },
+        { key: "skills", label: "Skills" },
+        
     ];
 
     const [tab, setTab] = useState("resumen");
