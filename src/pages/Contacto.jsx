@@ -33,7 +33,7 @@ export default function Contacto() {
     <div className="container stack-lg">
       <h1>Contacto</h1>
 
-      <section className="grid-2">
+      <section className="grid">
         <div className="card stack">
           <h2>Mensaje</h2>
 

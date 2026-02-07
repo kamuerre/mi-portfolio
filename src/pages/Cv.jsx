@@ -12,7 +12,7 @@ export default function Cv() {
         linkedin: "https://www.linkedin.com/in/camila-rasnosky/",
         github: "https://github.com/kamuerre",
         pdfUrl: "/cv/cv-camila.pdf",
-        whatsapp: "https://wa.me/1139327614?text=Hola%20Cami,%20vi%20tu%20portfolio",
+        whatsapp: "https://wa.me/5491139327614?text=Hola%20Cami,%20vi%20tu%20portfolio",
     };
 
     const EXPERIENCIA = [
