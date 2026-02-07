@@ -12,6 +12,7 @@ export default function Cv() {
         linkedin: "https://www.linkedin.com/in/camila-rasnosky/",
         github: "https://github.com/kamuerre",
         pdfUrl: "/cv/cv-camila.pdf",
+        whatsapp: "https://wa.me/1139327614?text=Hola%20Cami,%20vi%20tu%20portfolio",
     };
 
     const EXPERIENCIA = [
@@ -173,6 +174,11 @@ export default function Cv() {
                         <a href={PROFILE.emailTo} target="_blank" rel="noreferrer" style={{ color: "#ff7a00" }}>
                             <img src="/icono-email.svg" alt="icono email" style={{ width: 50, height: 50, filter: "invert(52%) sepia(89%) saturate(2200%) hue-rotate(5deg)" }} />
                         </a>
+                        <a href={PROFILE.whatsapp} target="_blank" rel="noreferrer" style={{ color: "#ff7a00" }}>
+                            <img src="/icono-whatsapp.svg" alt="icono whatsapp" style={{ width: 50, height: 50, filter: "invert(52%) sepia(89%) saturate(2200%) hue-rotate(5deg)" }} />
+                        </a>
+                       
+
                     </div>
                 </div>
 
@@ -186,9 +192,9 @@ export default function Cv() {
                     <span className="dot"> • </span>
                 </div>
 
-                    <a href={`mailto:${PROFILE.email}`} className="cv-link">
-                        {PROFILE.email}
-                    </a>
+                <a href={`mailto:${PROFILE.email}`} className="cv-link">
+                    {PROFILE.email}
+                </a>
 
                 <div className="tabs filters">
                     {tabs.map((t) => (
