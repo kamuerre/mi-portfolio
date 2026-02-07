@@ -369,7 +369,8 @@ export default function Cv() {
                         <ul className="bullets">
                             {CURSOS.map((c) => <li key={c}>{c}</li>)}
                         </ul>
-                        <Link className="btn ghost" to="/certificados">Ir a certificados</Link>
+                        <Link className="btn" to="/certificados">Ir a certificados</Link>
+                         
 
                     </div>
                 </section>
