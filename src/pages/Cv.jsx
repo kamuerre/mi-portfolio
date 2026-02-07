@@ -94,6 +94,7 @@ export default function Cv() {
     const EDUCACION = [
         { title: "Lic. en Ciencias de la Computación", place: "UBA", meta: "2024 – Actualidad" },
         { title: "Profesorado de Educación Primaria", place: "ENS N°2 Mariano Acosta", meta: "2020 – Actualidad" },
+        { title: "Bachiller con Orientación en Letras", place: "Colegio N°3 DE 02 Mariano Moreno", meta: "2003 - 2007" },
     ];
 
     const CURSOS = [
