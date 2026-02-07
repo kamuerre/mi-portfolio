@@ -782,3 +782,14 @@ iframe{ max-width:100%; }
     justify-content: center;
   }
 }
+.imagenLogo{
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  
+}
+
+.imagenLogo img{
+  display: block;          /* evita espacios raros inline */
+  max-width: 100%;
+  height: auto;
+}

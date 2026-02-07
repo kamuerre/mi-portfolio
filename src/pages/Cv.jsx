@@ -177,7 +177,7 @@ export default function Cv() {
                         <a href={PROFILE.whatsapp} target="_blank" rel="noreferrer" style={{ color: "#ff7a00" }}>
                             <img src="/icono-whatsapp.svg" alt="icono whatsapp" style={{ width: 50, height: 50, filter: "invert(52%) sepia(89%) saturate(2200%) hue-rotate(5deg)" }} />
                         </a>
-                       
+
 
                     </div>
                 </div>
@@ -216,24 +216,82 @@ export default function Cv() {
                     <div className="card stack">
                         <h2>Resumen</h2>
                         <p className="muted">
-                            Desarrollo soluciones web con enfoque UX/UI, priorizando claridad, accesibilidad y mantenibilidad. Experiencia trabajando en equipos interdisciplinarios, con iteración constante y foco en la experiencia de usuario.
+                            Desarrollo soluciones web con foco en UX/UI, combinando diseño y desarrollo front-end para crear interfaces claras, accesibles y mantenibles. Trabajo con componentes reutilizables y sistemas de diseño, cuidando la coherencia visual y la experiencia en distintos dispositivos.
+
+                            Cuento con formación en diseño UX/UI, desarrollo front-end y accesibilidad web, lo que me permite abordar los proyectos desde una mirada integral: desde la estructura y la interacción hasta la implementación técnica. Tengo experiencia trabajando en equipos interdisciplinarios, iterando sobre el producto, recibiendo feedback y priorizando siempre la experiencia de las personas usuarias.
+
                         </p>
 
                         <h3 style={{ marginTop: 6 }}>Highlights</h3>
                         <ul className="bullets">
-                            <li>React + Vite para UI modular y rápida.</li>
-                            <li>Buenas prácticas: accesibilidad, responsive, componentes reutilizables.</li>
-                            <li>Integración con APIs + documentación (Postman/Swagger).</li>
+                            <li>
+                                Diseño e implementación de interfaces que priorizan legibilidad,
+                                orden visual y experiencia de uso.
+                            </li>
+                            <li>
+                                Trabajo con componentes reutilizables para mantener consistencia
+                                visual a lo largo del sitio.
+                            </li>
+                            <li>
+                                Enfoque en diseño responsive, pensando la experiencia primero en
+                                mobile y adaptándola progresivamente.
+                            </li>
+                            <li>
+                                Atención al detalle en interacciones, estados y feedback visual.
+                            </li>
                         </ul>
+                        <div className="imagenLogo">
+                            <img src="/milogo.svg" alt="logo" width="150px" height="150px" />
+                        </div>
+
                     </div>
 
                     <div className="card stack">
-                        <h2>Acciones rápidas</h2>
-                        <div className="btn-row">
-                            <button className="btn" onClick={() => setTab("proyectos")}>Ver proyectos</button>
-                            <button className="btn secondary" onClick={() => setTab("skills")}>Ver skills</button>
-                            <Link className="btn ghost" to="/certificados">CERTIFICADOS</Link>
+
+                        <h2>Más sobre mí</h2>
+                        <p className="muted">
+                            Intereses y actividades que influyen en mi forma de pensar, crear y trabajar.
+                        </p>
+
+                        <div className="stack-sm">
+                            <strong>🎭 Artes escénicas & expresión</strong>
+                            <ul className="bullet-list">
+                                <li>Teatro</li>
+                                <li>Danza</li>
+                                <li>Clown</li>
+                                <li>Grupos de espectadores de teatro (Proyecto Pierre)</li>
+                            </ul>
                         </div>
+
+                        <div className="stack-sm">
+                            <strong>🎨 Creatividad & cultura</strong>
+                            <ul className="bullet-list">
+                                <li>Dibujar</li>
+                                <li>Leer</li>
+                                <li>Cine debate</li>
+                                <li>Potterhead</li>
+                            </ul>
+                        </div>
+
+                        <div className="stack-sm">
+                            <strong>🧠 Pensamiento & lógica</strong>
+                            <ul className="bullet-list">
+                                <li>Juegos de mesa</li>
+                                <li>Resolución de crímenes (juegos)</li>
+                                <li>Enigmas</li>
+                                <li>Sudokus</li>
+                            </ul>
+                        </div>
+
+                        <div className="stack-sm">
+                            <strong>🤝 Social & movimiento</strong>
+                            <ul className="bullet-list">
+                                <li>Deporte</li>
+                                <li>Política</li>
+                            </ul>
+                        </div>
+
+
 
 
                     </div>
