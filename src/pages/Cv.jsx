@@ -107,7 +107,6 @@ export default function Cv() {
     const tabs = [
         { key: "resumen", label: "Resumen" },
         { key: "experiencia", label: "Experiencia" },
-        { key: "proyectos", label: "Proyectos" },
         { key: "skills", label: "Skills" },
         { key: "educacion", label: "Educación" },
     ];
@@ -385,7 +384,7 @@ export default function Cv() {
                         <ul className="bullets">
                             {CURSOS.map((c) => <li key={c}>{c}</li>)}
                         </ul>
-                       
+
                     </div>
                 </section>
             )}
