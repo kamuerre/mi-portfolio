@@ -2,8 +2,11 @@
    Design tokens
    ========================= */
 :root{
+    --violet-hard2:#6a1b7b ;
+;
+    --violet-hard:#2b0f3f;
   --violet:#7c3aed;
-  --violet-soft:#ede9fe;
+  --violet-soft:#8f80d2;
 
   --orange:#f97316;
   --orange-soft:#eac799;
@@ -691,17 +694,18 @@ iframe{ max-width:100%; }
   padding:9px 10px;
   border-radius:12px;
   border:1px solid #e5e7eb;
-  background:white;
+  background:var(--violet-hard);
   cursor:pointer;
   text-decoration:none;
   display:inline-flex;
   align-items:center;
   justify-content:center;
   flex:1 1 120px;
+  color: white;
 }
 
 .cert-btn--primary{
-  background:#111827;
+  background:var(--violet-hard2);
   color:white;
   border-color:#111827;
 }
