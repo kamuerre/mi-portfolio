@@ -385,9 +385,7 @@ export default function Cv() {
                         <ul className="bullets">
                             {CURSOS.map((c) => <li key={c}>{c}</li>)}
                         </ul>
-                        <div className="muted" style={{ fontSize: 13 }}>
-                            Tus certificados completos están en la sección “Certificados”.
-                        </div>
+                       
                     </div>
                 </section>
             )}
