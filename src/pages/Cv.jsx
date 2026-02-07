@@ -98,7 +98,6 @@ export default function Cv() {
     ];
 
     const CURSOS = [
-        "Node.js – Talento Tech",
         "React – Talento Tech",
         "Desarrollo Web – Coderhouse",
         "Programación Full Stack – Egg",
@@ -131,14 +130,7 @@ export default function Cv() {
         window.open(url, "_blank", "noopener,noreferrer");
     }
 
-    async function copyText(text) {
-        try {
-            await navigator.clipboard.writeText(text);
-            toast("Copiado ✅");
-        } catch {
-            toast("No se pudo copiar");
-        }
-    }
+    
 
     const skillGroups = useMemo(
         () => Array.from(new Set(SKILLS.map((s) => s.group))).sort((a, b) => a.localeCompare(b)),
@@ -168,9 +160,13 @@ export default function Cv() {
                         <a href={PROFILE.pdfUrl} target="_blank" rel="noreferrer" className="btn">
                             Ver CV (PDF)
                         </a>
-                        <a href={PROFILE.pdfUrl} download className="btn secondary">
-                            Descargar PDF
+                         <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" className="btn-secondary">
+                            LinkedIn
                         </a>
+                         <a href={PROFILE.github} target="_blank" rel="noreferrer" className="btn">
+                           Github
+                        </a>
+                      
                     </div>
                 </div>
 
