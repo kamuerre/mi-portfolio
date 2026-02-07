@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="navbar__inner">
+      <div className="navbar__inner container">
         <div className="navbar__brand">Camila Rasnosky</div>
 
         {/* Botón hamburguesa (solo se ve en mobile por CSS) */}
