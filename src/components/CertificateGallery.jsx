@@ -102,25 +102,29 @@ export default function CertificateGallery() {
   }, [data, q, inst]);
 
   return (
-    <div style={pageStyle}>
-      <header style={headerStyle}>
+    <div className="cert-page">
+      <header className="cert-header">
         <div>
           <h1 style={{ margin: 0 }}>Certificados</h1>
-          <div style={{ color: "#6b7280", marginTop: 6 }}>
+          <div className="cert-count">
             {filtered.length} de {data.length}
           </div>
         </div>
       </header>
 
-      <section style={controlsStyle}>
+      <section className="cert-controls">
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Buscar por curso, institución o tag…"
-          style={inputStyle}
+          className="cert-input"
         />
 
-        <select value={inst} onChange={(e) => setInst(e.target.value)} style={inputStyle}>
+        <select
+          value={inst}
+          onChange={(e) => setInst(e.target.value)}
+          className="cert-input"
+        >
           <option value="">Todas las instituciones</option>
           {instituciones.map((i) => (
             <option key={i} value={i}>
@@ -130,10 +134,10 @@ export default function CertificateGallery() {
         </select>
       </section>
 
-      <section style={gridStyle}>
+      <section className="cert-grid">
         {filtered.map((item) => (
-          <article key={item.id} style={cardStyle}>
-            <div style={thumbWrapStyle}>
+          <article key={item.id} className="cert-card">
+            <div className="cert-thumb">
               {item.tipo === "pdf" ? (
                 <PdfThumb url={item.archivo} title={item.curso} />
               ) : (
@@ -141,26 +145,28 @@ export default function CertificateGallery() {
                   src={item.archivo}
                   alt={`Miniatura - ${item.curso}`}
                   loading="lazy"
-                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                  className="cert-img"
                 />
               )}
             </div>
 
-            <div style={bodyStyle}>
-              <div style={titleStyle}>{item.curso}</div>
-              <div style={metaStyle}>{item.institucion}</div>
-              {fechaVisible(item) ? <div style={metaStyle}>{fechaVisible(item)}</div> : null}
+            <div className="cert-body">
+              <div className="cert-title">{item.curso}</div>
+              <div className="cert-meta">{item.institucion}</div>
+              {fechaVisible(item) ? (
+                <div className="cert-meta">{fechaVisible(item)}</div>
+              ) : null}
 
-              <div style={actionsStyle}>
+              <div className="cert-actions">
                 <a
                   href={item.archivo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ ...btnStyle, ...btnPrimaryStyle }}
+                  className="cert-btn cert-btn--primary"
                 >
                   Ver
                 </a>
-                <a href={item.archivo} download style={btnStyle}>
+                <a href={item.archivo} download className="cert-btn">
                   Descargar
                 </a>
               </div>
@@ -171,89 +177,3 @@ export default function CertificateGallery() {
     </div>
   );
 }
-
-/* estilos */
-const pageStyle = {
-  maxWidth: 1100,
-  margin: "0 auto",
-  padding: 20,
-  fontFamily: "ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial",
-};
-
-const headerStyle = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "baseline",
-  gap: 12,
-  marginBottom: 14,
-};
-
-const controlsStyle = {
-  display: "grid",
-  gridTemplateColumns: "1fr 320px",
-  gap: 12,
-  marginBottom: 14,
-};
-
-const inputStyle = {
-  padding: "12px 12px",
-  borderRadius: 12,
-  border: "1px solid #e5e7eb",
-  outline: "none",
-};
-
-const gridStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-  gap: 14,
-};
-
-const cardStyle = {
-  border: "1px solid #e5e7eb",
-  borderRadius: 16,
-  overflow: "hidden",
-  background: "white",
-  boxShadow: "0 10px 24px rgba(0,0,0,.08)",
-};
-
-const thumbWrapStyle = {
-  aspectRatio: "16 / 10",
-  background: "#f3f4f6",
-  overflow: "hidden",
-  display: "grid",
-  placeItems: "center",
-};
-
-const bodyStyle = { padding: 12 };
-
-const titleStyle = { fontWeight: 800 };
-
-const metaStyle = {
-  color: "#6b7280",
-  fontSize: 14,
-  marginTop: 6,
-};
-
-const actionsStyle = {
-  display: "flex",
-  gap: 8,
-  marginTop: 12,
-};
-
-const btnStyle = {
-  padding: "9px 10px",
-  borderRadius: 12,
-  border: "1px solid #e5e7eb",
-  background: "white",
-  cursor: "pointer",
-  textDecoration: "none",
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",
-};
-
-const btnPrimaryStyle = {
-  background: "#111827",
-  color: "white",
-  borderColor: "#111827",
-};
