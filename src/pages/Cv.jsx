@@ -186,7 +186,7 @@ export default function Cv() {
                         {PROFILE.email}
                     </a>
 
-                    <span className="dot"> • </span>
+                    <span className="dot">  •  </span>
 
                     <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" className="cv-link">
                         LinkedIn
@@ -369,7 +369,7 @@ export default function Cv() {
                         <ul className="bullets">
                             {CURSOS.map((c) => <li key={c}>{c}</li>)}
                         </ul>
-                        <button className="btn" onClick={() => setTab("certificados")}>Ver certificados</button>
+                        <Link className="btn ghost" to="/certificados">Ir a certificados</Link>
 
                     </div>
                 </section>
