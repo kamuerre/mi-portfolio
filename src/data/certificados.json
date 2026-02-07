@@ -1,5 +1,4 @@
 [
-    
     {
         "id": "talento-tech-figma-2026-1202-05",
         "institucion": "Buenos Aires Aprende / Ministerio de Educación (Talento Tech)",
@@ -7,100 +6,7 @@
         "fecha": "2026-02-05",
         "tipo": "pdf",
         "archivo": "/certificados/talento-tech-figma.pdf",
-        "tags": [
-            "figma",
-            "frontend",
-            "diseño"
-        ]
-    },
-    {
-        "id": "coderhouse-desarrollo-web-2024-12-05",
-        "institucion": "Coderhouse",
-        "curso": "Desarrollo Web",
-        "fecha": "2024-12-05",
-        "tipo": "imagen",
-        "archivo": "/certificados/coderhouse-desarrollo-web.png",
-        "tags": [
-            "web",
-            "frontend"
-        ]
-    },
-    {
-        "id": "egg-introduccion-programacion-2023-02-16",
-        "institucion": "Egg (Argentina Programa 4.0)",
-        "curso": "Introducción a la Programación (1° Etapa)",
-        "fecha": "2023-02-16",
-        "tipo": "imagen",
-        "archivo": "/certificados/egg-intro-programacion.jpg",
-        "tags": [
-            "programacion",
-            "fundamentos"
-        ]
-    },
-    {
-        "id": "egg-backend2-java-bd-2023-09-08",
-        "institucion": "Egg (Argentina Programa 4.0)",
-        "curso": "Backend 2: Java y Base de Datos (Programador Full Stack Junior)",
-        "fecha": "2023-09-08",
-        "tipo": "pdf",
-        "archivo": "/certificados/egg-backend2-java-bd.pdf",
-        "tags": [
-            "backend",
-            "java",
-            "sql"
-        ]
-    },
-    {
-        "id": "egg-frontend-html-css-js-react-2023-10-27",
-        "institucion": "Egg (Argentina Programa 4.0)",
-        "curso": "Cuarto Tramo: Frontend (HTML + CSS | JavaScript | React)",
-        "fecha": "2023-10-27",
-        "tipo": "pdf",
-        "archivo": "/certificados/egg-frontend.pdf",
-        "tags": [
-            "frontend",
-            "html",
-            "css",
-            "javascript",
-            "react"
-        ]
-    },
-    {
-        "id": "egg-programacion-full-stack-2023-10-27",
-        "institucion": "Egg (Argentina Programa 4.0)",
-        "curso": "Programación Full Stack",
-        "fecha": "2023-10-27",
-        "duracion_horas": 441,
-        "tipo": "pdf",
-        "archivo": "/certificados/egg-programacion-full-stack.pdf",
-        "tags": [
-            "fullstack"
-        ]
-    },
-    {
-        "id": "educacionit-intro-programacion-2025-05-12",
-        "institucion": "EducaciónIT",
-        "curso": "Introducción a la Programación (e-Learning)",
-        "fecha": "2025-05-12",
-        "tipo": "pdf",
-        "archivo": "/certificados/educacionit-intro-programacion.pdf",
-        "tags": [
-            "programacion",
-            "fundamentos"
-        ]
-    },
-    {
-        "id": "caba-talento-tech-backend-nodejs-2025-07",
-        "institucion": "Buenos Aires Aprende / Ministerio de Educación (Talento Tech)",
-        "curso": "Back-End / Node JS",
-        "fecha": "2025-07",
-        "duracion_horas": 80,
-        "tipo": "pdf",
-        "archivo": "/certificados/talento-tech-nodejs.pdf",
-        "tags": [
-            "backend",
-            "nodejs"
-        ]
+        "tags": ["figma", "frontend", "diseño"]
     },
     {
         "id": "caba-talento-tech-reactjs-2025-12",
@@ -110,52 +16,44 @@
         "duracion_horas": 80,
         "tipo": "pdf",
         "archivo": "/certificados/talento-tech-reactjs.pdf",
-        "tags": [
-            "frontend",
-            "react"
-        ]
+        "tags": ["frontend", "react"]
     },
     {
-        "id": "caba-codo-a-codo-ux-ui-2024-05",
-        "institucion": "Buenos Aires Aprende / Agencia de Habilidades para el Futuro",
-        "curso": "Codo a Codo 4.0 – Diseño UX-UI",
-        "fecha": "2024-05",
-        "duracion_horas": 208,
-        "duracion_horas_blandas": 10,
+        "id": "caba-talento-tech-backend-nodejs-2025-07",
+        "institucion": "Buenos Aires Aprende / Ministerio de Educación (Talento Tech)",
+        "curso": "Back-End / Node JS",
+        "fecha": "2025-07",
+        "duracion_horas": 80,
         "tipo": "pdf",
-        "archivo": "/certificados/codo-a-codo-ux-ui.pdf",
-        "tags": [
-            "ux",
-            "ui"
-        ]
+        "archivo": "/certificados/talento-tech-nodejs.pdf",
+        "tags": ["backend", "nodejs"]
     },
     {
-        "id": "inap-accesibilidad-web-2024-05-14_2024-06-10",
-        "institucion": "INAP (Campus Virtual)",
-        "curso": "Accesibilidad Web – Introducción y Pautas",
-        "fecha_inicio": "2024-05-14",
-        "fecha_fin": "2024-06-10",
-        "duracion_horas": 25,
+        "id": "educacionit-intro-programacion-2025-05-12",
+        "institucion": "EducaciónIT",
+        "curso": "Introducción a la Programación (e-Learning)",
+        "fecha": "2025-05-12",
         "tipo": "pdf",
-        "archivo": "/certificados/inap-accesibilidad-web.pdf",
-        "tags": [
-            "accesibilidad",
-            "web"
-        ]
+        "archivo": "/certificados/educacionit-intro-programacion.pdf",
+        "tags": ["programacion", "fundamentos"]
     },
     {
-        "id": "inap-ley-micaela-2020-05-19_2020-06-01",
-        "institucion": "INAP (Campus Virtual)",
-        "curso": "Ley Micaela: capacitación en género y violencia contra las mujeres",
-        "fecha_inicio": "2020-05-19",
-        "fecha_fin": "2020-06-01",
-        "duracion_horas": 8,
+        "id": "ciudad-bilingue-ingles-2025",
+        "institucion": "Buenos Aires Ciudad Bilingue / Edusoft, a subsidiary of ETS",
+        "curso": "Pre Intermediate 1 (Inglés)",
+        "fecha": "2025",
         "tipo": "pdf",
-        "archivo": "/certificados/inap-ley-micaela.pdf",
-        "tags": [
-            "genero",
-            "capacitacion"
-        ]
+        "archivo": "/certificados/a2-ingles-certificado.pdf",
+        "tags": ["inglés", "A2", "Pre Intermediate 1"]
+    },
+    {
+        "id": "coderhouse-desarrollo-web-2024-12-05",
+        "institucion": "Coderhouse",
+        "curso": "Desarrollo Web",
+        "fecha": "2024-12-05",
+        "tipo": "imagen",
+        "archivo": "/certificados/coderhouse-desarrollo-web.png",
+        "tags": ["web", "frontend"]
     },
     {
         "id": "inap-evaluacion-big-data-2024-06-11_2024-06-24",
@@ -166,10 +64,66 @@
         "duracion_horas": 5,
         "tipo": "pdf",
         "archivo": "/certificados/inap-evaluacion-big-data.pdf",
-        "tags": [
-            "datos",
-            "evaluacion"
-        ]
+        "tags": ["datos", "evaluacion"]
+    },
+    {
+        "id": "inap-accesibilidad-web-2024-05-14_2024-06-10",
+        "institucion": "INAP (Campus Virtual)",
+        "curso": "Accesibilidad Web – Introducción y Pautas",
+        "fecha_inicio": "2024-05-14",
+        "fecha_fin": "2024-06-10",
+        "duracion_horas": 25,
+        "tipo": "pdf",
+        "archivo": "/certificados/inap-accesibilidad-web.pdf",
+        "tags": ["accesibilidad", "web"]
+    },
+    {
+        "id": "caba-codo-a-codo-ux-ui-2024-05",
+        "institucion": "Buenos Aires Aprende / Agencia de Habilidades para el Futuro",
+        "curso": "Codo a Codo 4.0 – Diseño UX-UI",
+        "fecha": "2024-05",
+        "duracion_horas": 208,
+        "duracion_horas_blandas": 10,
+        "tipo": "pdf",
+        "archivo": "/certificados/codo-a-codo-ux-ui.pdf",
+        "tags": ["ux", "ui"]
+    },
+    {
+        "id": "egg-frontend-html-css-js-react-2023-10-27",
+        "institucion": "Egg (Argentina Programa 4.0)",
+        "curso": "Cuarto Tramo: Frontend (HTML + CSS | JavaScript | React)",
+        "fecha": "2023-10-27",
+        "tipo": "pdf",
+        "archivo": "/certificados/egg-frontend.pdf",
+        "tags": ["frontend", "html", "css", "javascript", "react"]
+    },
+    {
+        "id": "egg-programacion-full-stack-2023-10-27",
+        "institucion": "Egg (Argentina Programa 4.0)",
+        "curso": "Programación Full Stack",
+        "fecha": "2023-10-27",
+        "duracion_horas": 441,
+        "tipo": "pdf",
+        "archivo": "/certificados/egg-programacion-full-stack.pdf",
+        "tags": ["fullstack"]
+    },
+    {
+        "id": "egg-backend1-java-2023-05-12",
+        "institucion": "Egg (Argentina Programa 4.0)",
+        "curso": "Backend 1: Java (Programador Full Stack Junior)",
+        "fecha": "2023-09-08",
+        "tipo": "pdf",
+        "archivo": "/certificados/egg-backend1-java.pdf",
+        "tags": ["backend", "java", "POO", "Polimorfismos", "Interfaces", "Herencia"]
+    },
+    {
+        "id": "egg-backend2-java-bd-2023-09-08",
+        "institucion": "Egg (Argentina Programa 4.0)",
+        "curso": "Backend 2: Java y Base de Datos (Programador Full Stack Junior)",
+        "fecha": "2023-09-08",
+        "tipo": "pdf",
+        "archivo": "/certificados/egg-backend2-java-bd.pdf",
+        "tags": ["backend", "java", "sql"]
     },
     {
         "id": "inap-diseno-centrado-personas-2023-08-08_2023-08-22",
@@ -180,10 +134,16 @@
         "duracion_horas": 5,
         "tipo": "pdf",
         "archivo": "/certificados/inap-diseno-centrado-personas.pdf",
-        "tags": [
-            "ux",
-            "diseno"
-        ]
+        "tags": ["ux", "diseno"]
+    },
+    {
+        "id": "egg-introduccion-programacion-2023-02-16",
+        "institucion": "Egg (Argentina Programa 4.0)",
+        "curso": "Introducción a la Programación (1° Etapa)",
+        "fecha": "2023-02-16",
+        "tipo": "imagen",
+        "archivo": "/certificados/egg-intro-programacion.jpg",
+        "tags": ["programacion", "fundamentos"]
     },
     {
         "id": "inap-atencion-ciudadania-2021-04-09_2021-04-29",
@@ -194,9 +154,35 @@
         "duracion_horas": 10,
         "tipo": "pdf",
         "archivo": "/certificados/inap-atencion-ciudadania.pdf",
-        "tags": [
-            "ciudadania",
-            "servicio"
-        ]
+        "tags": ["ciudadania", "servicio"]
+    },
+    {
+        "id": "inap-ley-micaela-2020-05-19_2020-06-01",
+        "institucion": "INAP (Campus Virtual)",
+        "curso": "Ley Micaela: capacitación en género y violencia contra las mujeres",
+        "fecha_inicio": "2020-05-19",
+        "fecha_fin": "2020-06-01",
+        "duracion_horas": 8,
+        "tipo": "pdf",
+        "archivo": "/certificados/inap-ley-micaela.pdf",
+        "tags": ["genero", "capacitacion"]
+    },
+    {
+        "id": "curso-de-asistente-de-edicion-audiovisual",
+        "institucion": "Ministerio de Trabajo, Empleo y Seguridad Social / Cooperativa de trabajo ¨Encuentro LTDA¨",
+        "curso": "Curso de Asistente de Edición Audiovisual",
+        "fecha": "2013-07-20",
+        "tipo": "jpg",
+        "archivo": "/certificados/curso-de-asistente-de-edicion-audiovisual.jpg",
+        "tags": ["Adobe Premiere Pro", "Adobe Illustrator", "Adobe Photoshop", "Nuendo", "Fotografía", "Montaje"]
+    },
+    {
+        "id": "curso-de-animacion-cultural-orientado-en-teatro",
+        "institucion": "Gobierno de la Ciudad de Buenos Aires / Instituto Vocacional de Arte Manuel J. Labardén (IVA)",
+        "curso": "Curso de Animación Cultural con orientación en Teatro",
+        "fecha": "2007-11-30",
+        "tipo": "jpg",
+        "archivo": "/certificados/curso-de-animacion-cultural-orientado-en-teatro-frente",
+        "tags": ["teatro", "clown", "escenoplástica", "animación de grupos", "técnica vocal", "improvisación", "adaptabilidad", "trabajo en equipo", "coordinación de grupos"]
     }
 ]
