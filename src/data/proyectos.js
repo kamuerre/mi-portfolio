@@ -1,4 +1,30 @@
 const proyectos = [
+
+     {
+        id: "porfolio-personal",
+        nombre: "Portfolio Personal",
+        descripcion:
+            "Sitio personal que sirve como cv, proyectos personales, historial académico y laboral",
+        resumenCV:
+            "Sitio personal",
+        stack: ["React", "Vite", "Frontend", "UX/UI", "HTML", "CSS", "JavaScript"],
+        link: "https://camilarasnosky.netlify.app/",
+        destacado: true,
+        tipo: "profesional",
+    },
+    {
+        id: "ecommerce-libreria-3d",
+        nombre: "E-Commerce para librería 3D",
+        descripcion:
+            "Entrega parcial del curso de React Js, el sitio representa un ecommerce para una librería donde se puede gestionar los productos y el carrito de ocmpras, para la parte backend se utilizó MockApi",
+        resumenCV:
+            "Ecommerce de productos de Librería escolar",
+        stack: ["React", "Vite", "MockApi", "Frontend", "UX/UI", "HTML", "CSS", "JavaScript"],
+        link: "https://libreria3dproto.netlify.app/",
+        destacado: true,
+        tipo: "educativo",
+    },
+
     {
         id: "press-generator",
         nombre: "Generador de Partes de Prensa Institucional",
@@ -64,18 +90,18 @@ const proyectos = [
         resumenCV:
             "Diseño y desarrollo de sitio web para ciclo cultural de cinedebates.",
         stack: ["Frontend", "UX/UI", "HTML", "CSS", "JavaScript"],
-        link: "https://kamuerre.github.io/IntegradorTalentoTech-Rasnosky/index.html", 
+        link: "https://kamuerre.github.io/IntegradorTalentoTech-Rasnosky/index.html",
         tipo: "cultural",
     },
-     {
+    {
         id: "MedicApp",
         nombre: "MedicApp",
         descripcion:
             "Diseño y prototipado de app Mobile para servicios médicos.",
         resumenCV:
             "Diseño UX/UI de aplicación que centraliza historias clínicas, estudios médicos, y además te informa en tiempo real cual es la guardia mas cercana con menor tiempo de espera.",
-        stack: ["Research", "UX/UI", "Benchmarking", "Logo", "Diseño", "Storytelling","Storyboard","Cardsorting","UserFlow","Wireframes","Usabilidad","Moodboard"],
-        link: "https://docs.google.com/presentation/d/1bJ3RdkF2YctAASBILTC0BUN9YcwgSCD9/edit?slide=id.p1#slide=id.p1", 
+        stack: ["Research", "UX/UI", "Benchmarking", "Logo", "Diseño", "Storytelling", "Storyboard", "Cardsorting", "UserFlow", "Wireframes", "Usabilidad", "Moodboard"],
+        link: "https://docs.google.com/presentation/d/1bJ3RdkF2YctAASBILTC0BUN9YcwgSCD9/edit?slide=id.p1#slide=id.p1",
         tipo: "salud",
     }
 ];
