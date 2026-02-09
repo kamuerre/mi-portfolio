@@ -4,7 +4,7 @@ const proyectos = [
         id: "porfolio-personal",
         nombre: "Portfolio Personal",
         descripcion:
-            "Sitio personal que sirve como cv, proyectos personales, historial académico y laboral",
+            "Sitio personal que sirve como cv, proyectos personales, historial académico y laboral.",
         resumenCV:
             "Sitio personal",
         stack: ["React", "Vite", "Frontend", "UX/UI", "HTML", "CSS", "JavaScript"],
@@ -16,7 +16,7 @@ const proyectos = [
         id: "ecommerce-libreria-3d",
         nombre: "E-Commerce para librería 3D",
         descripcion:
-            "Entrega parcial del curso de React Js, el sitio representa un ecommerce para una librería donde se puede gestionar los productos y el carrito de ocmpras, para la parte backend se utilizó MockApi",
+            "Entrega parcial del curso de React Js, el sitio representa un ecommerce para una librería donde se puede gestionar los productos y el carrito de ocmpras, para la parte backend se utilizó MockApi.",
         resumenCV:
             "Ecommerce de productos de Librería escolar",
         stack: ["React", "Vite", "MockApi", "Frontend", "UX/UI", "HTML", "CSS", "JavaScript"],
