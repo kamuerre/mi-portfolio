@@ -263,7 +263,7 @@ iframe {
 }
 
 .btn.secondary:hover {
-    background: #ea580c;
+    background: var(--violet-hard2);
 }
 
 .btn.ghost {
