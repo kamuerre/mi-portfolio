@@ -257,9 +257,9 @@ iframe {
 }
 
 .btn.secondary {
-    background: var(--orange);
+    background: var(--violet-hard);
     color: white;
-    border-color: var(--orange);
+    border-color: var(--violet-hard2);
 }
 
 .btn.secondary:hover {
