@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://camilarasnosky.netlify.app/sitemap.xml
