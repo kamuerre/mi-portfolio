@@ -13,20 +13,24 @@ import Contacto from "./pages/Contacto";
 export default function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <div className="app-shell">
+        <Navbar />
 
-      <main className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobre-mi" element={<SobreMi />} />
-          <Route path="/proyectos" element={<Proyectos />} />
-          <Route path="/certificados" element={<Certificados />} />
-          <Route path="/cv" element={<Cv />} />
-          <Route path="/contacto" element={<Contacto />} />
-        </Routes>
-      </main>
+        <main className="main-content">
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/sobre-mi" element={<SobreMi />} />
+              <Route path="/proyectos" element={<Proyectos />} />
+              <Route path="/certificados" element={<Certificados />} />
+              <Route path="/cv" element={<Cv />} />
+              <Route path="/contacto" element={<Contacto />} />
+            </Routes>
+          </div>
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
