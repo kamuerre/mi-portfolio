@@ -55,6 +55,16 @@
         "archivo": "/certificados/coderhouse-desarrollo-web.png",
         "tags": ["web", "frontend"]
     },
+       {
+        "id": "caba-talento-tech-frontend-js-2024-12",
+        "institucion": "Buenos Aires Aprende / Ministerio de Educación (Talento Tech)",
+        "curso": "Frontend JS",
+        "fecha": "2024-12",
+        "duracion_horas": 80,
+        "tipo": "pdf",
+        "archivo": "/certificados/caba-frontend-js.pdf",
+        "tags": ["frontend", "javascript"]
+    },
     {
         "id": "inap-evaluacion-big-data-2024-06-11_2024-06-24",
         "institucion": "INAP (Campus Virtual)",
