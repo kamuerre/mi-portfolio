@@ -8,7 +8,7 @@ export default function Cv() {
         rol: "Desarrolladora Full Stack · Frontend / UX UI",
         ubicacion: "Parque Chacabuco, Ciudad Autónoma de Buenos Aires, ARGENTINA",
         email: "crasnosky@gmail.com",
-        emailTo: "mailto:tuemail@gmail.com",
+        emailTo: "mailto:crasnosky@gmail.com",
         linkedin: "https://www.linkedin.com/in/camila-rasnosky/",
         github: "https://github.com/kamuerre",
         pdfUrl: "/cv/cv-camila.pdf",
