@@ -1,4 +1,16 @@
 const proyectos = [
+     {
+        id: "cosas-que-escribi",
+        nombre: "Cosas que escribí",
+        descripcion:
+            "Portafolio y bitácora literaria personal que reúne poemas, cuentos, proyectos dramáticos y guiones desarrollados entre 2006 y 2026, con lectura interactiva, persistenica de leídos y opción de pantalla completa.",
+        resumenCV:
+            "Bitácora y portafolio literario personal",
+        stack: ["JavaScript", "HTML5", "CSS3", "GitHub Pages", "UX/UI"],
+        link: "https://camilarasnosky.github.io/", // Ajustá la URL si tenés una ruta específica
+        destacado: true,
+        tipo: "personal",
+    },
 
      {
         id: "porfolio-personal",
