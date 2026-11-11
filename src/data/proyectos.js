@@ -7,7 +7,7 @@ const proyectos = [
         resumenCV:
             "Bitácora y portafolio literario personal",
         stack: ["JavaScript", "HTML5", "CSS3", "GitHub Pages", "UX/UI"],
-        link: "https://camilarasnosky.github.io/camilaEscritora", 
+        link: "https://camilarasnosky.github.io/camilaEscritora/", 
         destacado: true,
         tipo: "personal",
     },
