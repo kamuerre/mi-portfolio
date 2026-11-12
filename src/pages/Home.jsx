@@ -6,9 +6,10 @@ export default function Home() {
       {/* HERO */}
       <section className="card hero stack">
         <div className="stack-sm">
-          <h1 className="hero__title">Portfolio</h1>
+          <h1 className="hero__title">Camila Rasnosky</h1>
           <p className="muted hero__subtitle">
-            Desarrollo web + UX/UI. Navegá por las secciones para ver proyectos, certificados y CV.
+            Desarrollo web + UX/UI. Diseño interfaces y construyo herramientas
+            funcionales combinando lógica, estética y empatía.
           </p>
         </div>
 
@@ -28,48 +29,50 @@ export default function Home() {
         </div>
       </section>
 
-      {/* QUICK NAV */}
+      {/* PRESENTACIÓN PERSONAL */}
       <section className="section">
-        <div className="home-grid">
-          <Link to="/sobre-mi" className="card card-link stack-sm">
-            <div className="card-link__top">
-              <span className="chip soft">Perfil</span>
-            </div>
-            <h2 className="card-title">Sobre mí</h2>
-            <p className="muted">
-              Experiencia, enfoque de diseño y herramientas que uso para trabajar.
-            </p>
-          </Link>
+        <div className="card stack">
+          <div className="stack-sm">
+            <span className="chip soft">Quién soy</span>
+            <h2 className="card-title">Más allá del código y los wireframes</h2>
+          </div>
 
-          <Link to="/proyectos" className="card card-link stack-sm">
-            <div className="card-link__top">
-              <span className="chip soft">Demos</span>
-            </div>
-            <h2 className="card-title">Proyectos</h2>
-            <p className="muted">
-              Selección de trabajos y prototipos con links y stack.
+          <div className="stack-sm">
+            <p>
+              Mi camino hacia la tecnología no fue lineal, y ahí está mi mayor
+              fortaleza: antes de meterme de lleno en el desarrollo de software
+              y la computación, pasé por la docencia primaria, el teatro y las
+              artes audiovisuales.
             </p>
-          </Link>
+            <p>
+              Me gusta mucho investigar, detectar problemas cotidianos y pensar
+              soluciones realizables y escalables. Combinando mis conocimientos
+              técnicos con herramientas de IA, desarrollé automatizaciones para
+              simplificar tareas repetitivas tanto en mi trabajo como en el de
+              otras personas, e incluso armé plataformas comunitarias, como un
+              directorio web para mi grupo de vecinos donde centralizamos
+              teléfonos útiles y recomendaciones de oficios de confianza.
+            </p>
+            <p className="muted">
+              Cuando apago la compu, me vas a encontrar escribiendo cuentos y
+              poesía, editando algún video musical, yendo a recitales o
+              compartiendo tardes de juegos de mesa en familia con mi hija, mi
+              perro y mi gato.
+            </p>
+          </div>
 
-          <Link to="/certificados" className="card card-link stack-sm">
-            <div className="card-link__top">
-              <span className="chip soft">Formación</span>
-            </div>
-            <h2 className="card-title">Certificados</h2>
-            <p className="muted">
-              Galería con PDFs + miniaturas y fechas, ordenados cronológicamente.
-            </p>
-          </Link>
+          <div className="btn-row">
+            <span className="chip soft">✍️ Escritura creativa</span>
+            <span className="chip soft">🎬 Edición audiovisual</span>
+            <span className="chip soft">🎸 Recitales</span>
+            <span className="chip soft">🎲 Juegos de mesa</span>
+          </div>
 
-          <Link to="/cv" className="card card-link stack-sm">
-            <div className="card-link__top">
-              <span className="chip soft">Resumen</span>
-            </div>
-            <h2 className="card-title">CV</h2>
-            <p className="muted">
-              CV interactivo con experiencia, skills y acceso a PDF.
-            </p>
-          </Link>
+          <div className="btn-row">
+            <Link to="/sobre-mi" className="btn secondary">
+              Más sobre mi recorrido
+            </Link>
+          </div>
         </div>
       </section>
     </div>
