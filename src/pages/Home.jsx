@@ -33,8 +33,7 @@ export default function Home() {
       <section className="section">
         <div className="card stack">
           <div className="stack-sm">
-            <span className="chip soft">Quién soy</span>
-            <h2 className="card-title">Más allá del código y los wireframes</h2>
+            <h2 className="card-title"> ¿Quién soy? </h2>
           </div>
 
           <div className="stack-sm">
@@ -56,18 +55,11 @@ export default function Home() {
             <p className="muted">
               Cuando apago la compu, me vas a encontrar escribiendo cuentos y
               poesía, editando algún video musical, yendo a recitales o
-              compartiendo tardes de juegos de mesa en familia con mi hija, mi
-              perro y mi gato.
+              compartiendo tardes de juegos de mesa en familia o con amigos.
             </p>
           </div>
 
-          <div className="btn-row">
-            <span className="chip soft">✍️ Escritura creativa</span>
-            <span className="chip soft">🎬 Edición audiovisual</span>
-            <span className="chip soft">🎸 Recitales</span>
-            <span className="chip soft">🎲 Juegos de mesa</span>
-          </div>
-
+         
           <div className="btn-row">
             <Link to="/sobre-mi" className="btn secondary">
               Más sobre mi recorrido
