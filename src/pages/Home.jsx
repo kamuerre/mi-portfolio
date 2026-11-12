@@ -50,7 +50,7 @@ export default function Home() {
               simplificar tareas repetitivas tanto en mi trabajo como en el de
               otras personas, e incluso armé plataformas comunitarias, como un
               directorio web para mi grupo de vecinos donde centralizamos
-              teléfonos útiles y recomendaciones de oficios de confianza.
+              teléfonos útiles y recomendaciones de personas que brinden servicios o hagan reparaciones y sean de confianza.
             </p>
             <p className="muted">
               Cuando apago la compu, me vas a encontrar escribiendo cuentos y
