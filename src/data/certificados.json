@@ -1,4 +1,13 @@
 [
+     {
+        "id": "utn-learning-diseñoux-ui-20265",
+        "institucion": "UTN Learning",
+        "curso": "Curso de Diseño Ux/Ui",
+        "fecha": "2026-11-12",
+        "tipo": "pdf",
+        "archivo": "/certificados/utn-ux-ui.pdf",
+        "tags": ["figma", "diseño", "ux/ui"]
+    },
     {
         "id": "talento-tech-figma-2026-1202-05",
         "institucion": "Buenos Aires Aprende / Ministerio de Educación (Talento Tech)",
